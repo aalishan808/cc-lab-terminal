@@ -1,0 +1,14 @@
+Two Core Functions of a Mini Compiler
+
+1.Lexical Analysis (Lexer):  
+   Converts source code into tokens by breaking it into meaningful components like keywords, identifiers, and operators. Example: x = 5 + 3 → [IDENTIFIER: x, ASSIGN_OP: =, NUMBER: 5, PLUS_OP: +, NUMBER: 3].
+
+2.Parsing (Parser):  
+   Uses tokens to build an Abstract Syntax Tree (AST), representing the code's structure according to grammar. Example: x = 5 + 3 →  
+
+   Assignment
+   ├── Identifier: x
+   └── Expression
+       ├── Number: 5
+       ├── Operator: +
+       └── Number: 3
