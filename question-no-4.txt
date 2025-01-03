@@ -1,0 +1,20 @@
+input:
+var x: int;
+x = 3 + 4;
+print x;
+
+Output:
+Tokens: [{'toktype': 1, 'value': 'input'}, {'toktype': 13, 'value': None}, {'toktype': 2, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 13, 'value': None}, {'toktype': 5, 'value': 'int'}, {'toktype': 17, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 6, 'value': None}, {'toktype': 3, 'value': 3}, {'toktype': 7, 'value': None}, {'toktype': 3, 'value': 4}, {'toktype': 17, 'value': None}, {'toktype': 0, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 17, 'value': None}]
+it means success
+
+
+Input:
+var x: int;
+x = 3 + 4.5;
+print x;
+
+Output:
+Tokens: [{'toktype': 2, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 13, 'value': None}, {'toktype': 5, 'value': 'int'}, {'toktype': 17, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 6, 'value': None}, {'toktype': 3, 'value': 3}, {'toktype': 7, 'value': None}, {'toktype': 4, 'value': 4.5}, {'toktype': 17, 'value': None}, {'toktype': 0, 'value': None}, {'toktype': 1, 'value': 'x'}, {'toktype': 17, 'value': None}]
+Abstract Syntax Tree (AST): {'decls': [{'nodetype': 0, 'id': 'x', 'type': 'int'}], 'stmts': [{'nodetype': 1, 'lhs': 'x', 'rhs': {'nodetype': 6, 'op': '+', 'lhs': {'nodetype': 3, 'value': 3}, 'rhs': {'nodetype': 4, 'value': 4.5}}}, {'nodetype': 2, 'expr': {'nodetype': 5, 'name': 'x'}}]}
+Symbol Table: {'x': 'int'}
+Error: operands must have the same type
