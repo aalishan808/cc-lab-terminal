@@ -1,0 +1,26 @@
+example input:
+John123, Invalid_Name, Amy_Rose1, short, Valid_123
+Example output:
+Validation Results:
+John123 - Valid
+Letters: 7 (Uppercase: 1, Lowercase: 3), Digits: 3, Underscores: 0
+Generated Password: DFbw82*%gJ!K (Strength: Strong)
+
+Invalid_Name - Invalid (Must start with a letter and only contain letters, digits, or underscores, length 5-15)
+
+Amy_Rose1 - Valid
+Letters: 9 (Uppercase: 2, Lowercase: 5), Digits: 1, Underscores: 1
+Generated Password: UQjv79%^Glgg (Strength: Strong)
+
+short - Valid
+Letters: 5 (Uppercase: 0, Lowercase: 5), Digits: 0, Underscores: 0
+Generated Password: IZqd13@#4sXh (Strength: Strong)
+
+Valid_123 - Valid
+Letters: 9 (Uppercase: 1, Lowercase: 4), Digits: 3, Underscores: 1
+Generated Password: NAdv42@$*UW4 (Strength: Strong)
+
+Processing complete.
+Total Usernames: 5
+Valid Usernames: 4
+Invalid Usernames: 1
