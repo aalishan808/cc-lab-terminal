@@ -1,0 +1,15 @@
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\bin\Debug\net8.0\questionno6.exe
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\bin\Debug\net8.0\questionno6.deps.json
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\bin\Debug\net8.0\questionno6.runtimeconfig.json
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\bin\Debug\net8.0\questionno6.dll
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\bin\Debug\net8.0\questionno6.pdb
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.AssemblyInfoInputs.cache
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.AssemblyInfo.cs
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.csproj.CoreCompileInputs.cache
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.sourcelink.json
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.dll
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\refint\questionno6.dll
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.pdb
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\questionno6.genruntimeconfig.cache
+C:\Users\Aalishan\Desktop\cc-lab-terminal\questionno6\obj\Debug\net8.0\ref\questionno6.dll

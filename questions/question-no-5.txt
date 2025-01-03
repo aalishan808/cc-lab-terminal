@@ -1,0 +1,33 @@
+The function typecheck(ast, symtab) in the mini compiler performs semantic analysis, which involves ensuring that the program's operations are consistent with the declared types of the variables involved. It checks the types of variables and expressions to ensure that operations are only performed on compatible types. Here's how it works:
+
+1. Function Overview: 
+   - Input: It takes two arguments:
+     - ast: the Abstract Syntax Tree (AST) of the mini program, which represents the structure of the program's statements and expressions.
+     - symtab: a symbol table, which is a dictionary mapping variable names to their declared types.
+   - Output: It returns an updated AST, where each expression node has an added type attribute, indicating the type of the expression or variable.
+
+2. Type Checking Process:
+   - Statements:
+     - Print: If the statement is a print statement (AST_PRINT), it checks the type of the expression being printed by calling check_expr on stmt["expr"].
+     - Read: If the statement is a read statement (AST_READ), no type checking is needed because it's just reading input, but the statement is returned unchanged.
+     - Assignment: If the statement is an assignment (AST_ASSIGN), the type of the right-hand side (RHS) expression is checked using check_expr. Then, it checks if the type of the RHS matches the type of the left-hand side (LHS) variable (using symtab[stmt["lhs"]]). If they match, the assignment is valid, and the statement is returned. If not, an error is raised indicating a type mismatch.
+     - While Loop: If the statement is a while loop (AST_WHILE), it checks the type of the loop condition (stmt["expr"]) to ensure it is of type "int". Then it checks the types of the body statements by recursively calling check_stmt on each body statement.
+
+   - Expressions:
+     - Integer Literals: If the expression is an integer literal (AST_INT), it is given the type "int".
+     - Float Literals: If the expression is a float literal (AST_FLOAT), it is given the type "float".
+     - Identifiers: If the expression is an identifier (AST_ID), it checks if the identifier is declared in the symtab. If it is, the type of the variable is assigned to the expression; if not, an error is raised for an undeclared variable.
+
+3. Error Handling: 
+   - If there are type mismatches, such as trying to assign a float to an integer variable, or if an undeclared variable is used, the function calls the error() function to stop the compilation process and print an error message.
+
+Example Flow:
+Consider the following snippet:
+ 
+x = 3 + y;
+
+- The function checks if x is declared (it is).
+- It then checks the types of the operands 3 and y. 3 is an integer, and y must also be an integer (if declared).
+- If both operands are integers, the expression is valid, and the assignment is allowed.
+
+This process ensures that the program adheres to the type rules defined in the language.

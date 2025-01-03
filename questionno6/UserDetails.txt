@@ -1,0 +1,30 @@
+Validation Results: 
+John123 - Valid
+Letters: 7 (Uppercase: 1, Lowercase: 3), Digits: 3, Underscores: 0
+Generated Password: EQus66$#jZ$U (Strength: Strong)
+
+Validation Results: 
+Invalid_Name - Valid
+Letters: 12 (Uppercase: 2, Lowercase: 9), Digits: 0, Underscores: 1
+Generated Password: LBie22$!*zPL (Strength: Strong)
+
+Validation Results: 
+Amy_Rose1 - Valid
+Letters: 9 (Uppercase: 2, Lowercase: 5), Digits: 1, Underscores: 1
+Generated Password: ZLvb66*@he49 (Strength: Strong)
+
+Validation Results: 
+short - Valid
+Letters: 5 (Uppercase: 0, Lowercase: 5), Digits: 0, Underscores: 0
+Generated Password: WCkl76#^VsRa (Strength: Strong)
+
+Validation Results: 
+Valid_123 - Valid
+Letters: 9 (Uppercase: 1, Lowercase: 4), Digits: 3, Underscores: 1
+Generated Password: FPuy64@*54q7 (Strength: Strong)
+
+Summary:
+- Total Usernames: 5
+- Valid Usernames: 5
+- Invalid Usernames: 0
+
